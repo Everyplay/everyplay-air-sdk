@@ -13,6 +13,45 @@ Everyplay SDK/AIR - Release Notes
 
 Adobe AIR and platform specific changes (if any) are separated
 
+## AIR 1910-1200 - Dec 8th 2014
+
+### iOS v1.9.1 - Nov 28th 2014 (build 1910)
+
+- Network access and caching optimizations
+
+- Video seek bar and video ending event fixes for
+  the new video player
+
+- [Everyplay sharedInstance].parentViewController is now a weak pointer
+
+- Improved UI orientation handling
+
+### Android v1.2 - Nov 28th 2014 (build 1200)
+
+- Generic optimizations against the new Everyplay community
+
+- New navigation top bar design to give more space while browsing
+
+- Network access and caching optimizations
+
+- Internal changes for UI theming support
+
+- 3rdparty java code is relocated to another package namespace
+  to avoid conflicts
+
+- Performance updates to media merging and trimming
+
+- Everyplay.setMaxRecordingMinutesLength didn't trim the
+  resulting video, fixed
+
+- Fixed potential crash issue with camera photo picker
+
+- Upload performance improvements
+
+- Everyplay.initEveryplay now retains IEveryplayListener
+
+- Try-catch blocks for rare exceptions added
+
 ## AIR 1901-1160 - Nov 10th 2014
 
 ### iOS v1.9.0 - Nov 10th 2014 (build 1901)

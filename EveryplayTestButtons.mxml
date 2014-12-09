@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009" 
-		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:s="library://ns.adobe.com/flex/spark"
 		 creationComplete="vgroup1_creationCompleteHandler(event)"
 		 remove="vgroup1_removeHandler(event)"
 		 implements="com.everyplay.air.IEveryplayListener">
@@ -9,37 +9,19 @@
 		<![CDATA[
 			import com.everyplay.air.Everyplay;
 			import com.everyplay.air.IEveryplayListener;
-			
+
 			import mx.events.FlexEvent;
 			
 			protected function startRecordingClicked(event:MouseEvent):void
 			{
 				if (!Everyplay.isSupported() || !Everyplay.isRecordingSupported()) return;
-				
 				Everyplay.startRecording();
-				/*
-				buttonsWhenRecorded.includeInLayout = false;
-				buttonsWhenRecorded.visible = false;
-				startRecordingButton.visible = false;
-				startRecordingButton.includeInLayout = false;
-				stopRecordingButton.visible = true;
-				stopRecordingButton.includeInLayout = true;
-				*/
 			}
 			
 			protected function stopRecordingClicked(event:MouseEvent):void
 			{
 				if (!Everyplay.isSupported() || !Everyplay.isRecordingSupported()) return;
-
 				Everyplay.stopRecording();
-				/*
-				buttonsWhenRecorded.includeInLayout = true;
-				buttonsWhenRecorded.visible = true;
-				startRecordingButton.visible = true;
-				startRecordingButton.includeInLayout = true;
-				stopRecordingButton.visible = false;
-				stopRecordingButton.includeInLayout = false;
-				*/
 			}
 			
 			protected function playLastRecordingClicked(event:MouseEvent):void
@@ -59,31 +41,31 @@
 				if (!Everyplay.isSupported()) return;
 				Everyplay.showEveryplay();
 			}
-			
+
 			protected function vgroup1_creationCompleteHandler(event:FlexEvent):void
 			{
 				Everyplay.addListener(this);
 			}
-			
+
 			protected function vgroup1_removeHandler(event:FlexEvent):void
 			{
 				Everyplay.removeListener(this);
 			}
-			
+
 			/* SHOW / HIDE */
 			public function onEveryplayShown () : void
 			{
 			}
-			
+
 			public function onEveryplayHidden () : void
 			{
 			}
-			
+
 			/* RECORDING */
 			public function onEveryplayReadyForRecording (enabled:int) : void
 			{
 			}
-			
+
 			public function onEveryplayRecordingStarted () : void
 			{
 				buttonsWhenRecorded.includeInLayout = false;
@@ -93,7 +75,7 @@
 				stopRecordingButton.visible = true;
 				stopRecordingButton.includeInLayout = true;
 			}
-			
+
 			public function onEveryplayRecordingStopped () : void
 			{
 				buttonsWhenRecorded.includeInLayout = true;
@@ -103,50 +85,50 @@
 				stopRecordingButton.visible = false;
 				stopRecordingButton.includeInLayout = false;
 			}
-			
+
 			/* FACECAM */
 			public function onEveryplayFaceCamSessionStarted () : void
 			{
 			}
-			
+
 			public function onEveryplayFaceCamRecordingPermission (granted:int) : void
 			{
 			}
-			
+
 			public function onEveryplayFaceCamSessionStopped () : void
 			{
 			}
-			
+
 			/* UPLOAD */
 			public function onEveryplayUploadDidStart (videoId:int) : void
 			{
 			}
-			
+
 			public function onEveryplayUploadDidProgress (videoId:int, progress:Number) : void
 			{
 			}
-			
+
 			public function onEveryplayUploadDidComplete (videoId:int) : void
 			{
 			}
-			
+
 			/* THUMBNAIL */
 			public function onEveryplayThumbnailReadyAtFilePath (thumbnailFilePath:String) : void
 			{
 			}
-			
+
 			public function onEveryplayThumbnailReadyAtUrl (thumbnailUrl:String) : void
 			{
 			}
-			
+
 			public function onEveryplayThumbnailReadyAtTextureId (textureId:int, portraitMode:int) : void
 			{
 			}
-			
+
 			/* ACCOUNT */
 			public function onEveryplayAccountDidChange () : void
 			{
-			}			
+			}
 		]]>
 	</fx:Script>
 	
