@@ -13,6 +13,25 @@ Everyplay SDK/AIR - Release Notes
 
 Adobe AIR and platform specific changes (if any) are separated
 
+## AIR 1921-1210 Dec 11th 2014
+
+### v1.9.2 - Dec 10th 2014 (build 1921)
+
+- [Everyplay initWithDelegate:] improvements
+
+- [Everyplay sharedInstance].everyplayDelegate is now a weak pointer
+
+- Minor UI and theming improvements
+
+### v1.2.1 - Dec 10th 2014 (build 1210)
+
+- App specific cached files now get removed upon
+  application uninstallation
+
+- Improved caching
+
+- Minor UI and theming improvements
+
 ## AIR 1910-1200 - Dec 8th 2014
 
 ### iOS v1.9.1 - Nov 28th 2014 (build 1910)
