@@ -13,6 +13,18 @@ Everyplay SDK/AIR - Release Notes
 
 Adobe AIR and platform specific changes (if any) are separated
 
+## AIR 1930-1220 - Dec 17th 2014
+
+### iOS v1.9.3 - Dec 17th 2014 (build 1930)
+
+- Fixed an issue with modal share dialog not appearing
+  on some viewController configurations
+
+### Android v1.2.2 - Dec 17th 2014 (build 1220)
+
+- Fixed a rare ClassNotFoundException with Parcel unable to find
+  com.everyplay.Everyplay.communication.EveryplayResultReceiver
+
 ## AIR 1921-1210 - Dec 11th 2014
 
 ### iOS v1.9.2 - Dec 10th 2014 (build 1921)
