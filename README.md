@@ -13,6 +13,10 @@ Everyplay SDK/AIR - Release Notes
 
 Adobe AIR and platform specific changes (if any) are separated
 
+## AIR 1940-1230 - Feb 4th 2015
+
+- Add support for iOS arm64 binary
+
 ## AIR 1940-1230 - Jan 15th 2015
 
 ### v1.9.4 - Jan 14th 2015 (build 1940)
