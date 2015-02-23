@@ -13,6 +13,41 @@ Everyplay SDK/AIR - Release Notes
 
 Adobe AIR and platform specific changes (if any) are separated
 
+## AIR 1950-1240 - Feb 23th 2015
+
+### v1.9.5 - Feb 20th 2015 (build 1950)
+
+- iOS 8 Metal improvements: Now supports Live FaceCam preview box,
+  thumbnail files/textures and using MTLPixelFormatRGBA8Unorm_sRGB
+
+- Now supports OpenAL audio streaming through alSourceQueueBuffers
+
+- Fix a conditition between showing modal share dialog and video editor
+  that could lead to everyplayHidden delegate not properly called, potentially
+  leading to game not being resumed as expected
+
+- Fixed an issue with Cocos2d's scaled graphics on iPhone 6 Plus that prevented
+  the recording from starting properly
+
+- Facebook: Remove use of deprecated publish_stream permission
+
+- Lighter UI theme
+
+### v1.2.4 - Feb 20th 2015 (build 1240)
+
+- More Android 5 Lollipop and Android Simulator fixes;
+  null pointer exceptions, activity handling changes
+
+- Fixed an issue with 64bit Android 5 devices that prevented
+  looking up package name properly
+
+- Querying device specific settings now wait until
+  Everyplay.initEveryplay is called
+
+- Facebook: Remove use of deprecated publish_stream permission
+
+- Lighter UI theme
+
 ## AIR 1940-1230 - Feb 4th 2015
 
 - Add support for iOS arm64 binary
