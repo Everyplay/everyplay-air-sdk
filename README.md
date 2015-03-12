@@ -13,9 +13,42 @@ Everyplay SDK/AIR - Release Notes
 
 Adobe AIR and platform specific changes (if any) are separated
 
+## AIR 1950-1300 - Mar 12th 2015
+
+### Android v1.3.0 - Mar 10th 2015 (build 1300)
+
+- All-new graphics processing backend for Android 4.3+, improving
+  framerate and stability a lot on many devices
+
+- Greatly improved support for Nvidia GPUs (Tegra 3, Tegra 4, Tegra K1)
+
+- Important AndroidManifest.xml changes to improve overall stability
+  and reduce memory usage. If you're maintaining the manifest manually
+  in your project, please merge the latest changes
+
+- Fixes to potential crashes while using the login activity
+
+- Fixed Javascript binding issues against some Android 4.4.x
+  releases that prevented Everyplay Social views from working
+
+- Fix potential performance issues when used against OpenGL ES3
+
+- On some Android versions, changing to another Activity and returning
+  could have prevented starting of a new recording from working, fixed
+
+- Fixed a GPU driver caused ADB log flood issue; seen on some devices
+  while recording
+
+- Improved image quality on apps with 32-bit color graphics
+
+- Multiple Nexus 10 specific issues fixed
+
+- Now supports Nvidia Shield Portable, Nvidia Shield Tablet
+  and Nexus 9 devices
+
 ## AIR 1950-1240 - Feb 23th 2015
 
-### v1.9.5 - Feb 20th 2015 (build 1950)
+### iOS v1.9.5 - Feb 20th 2015 (build 1950)
 
 - iOS 8 Metal improvements: Now supports Live FaceCam preview box,
   thumbnail files/textures and using MTLPixelFormatRGBA8Unorm_sRGB
@@ -33,7 +66,7 @@ Adobe AIR and platform specific changes (if any) are separated
 
 - Lighter UI theme
 
-### v1.2.4 - Feb 20th 2015 (build 1240)
+### Android v1.2.4 - Feb 20th 2015 (build 1240)
 
 - More Android 5 Lollipop and Android Simulator fixes;
   null pointer exceptions, activity handling changes
@@ -54,7 +87,7 @@ Adobe AIR and platform specific changes (if any) are separated
 
 ## AIR 1940-1230 - Jan 15th 2015
 
-### v1.9.4 - Jan 14th 2015 (build 1940)
+### iOS v1.9.4 - Jan 14th 2015 (build 1940)
 
 - Improved Facebook integration by asking server-side
   configuration status
@@ -62,7 +95,7 @@ Adobe AIR and platform specific changes (if any) are separated
 - Improved AVFoundation/AVAudioPlayer usage against
   small sound effects
 
-### v1.2.3 - Jan 14th 2015 (build 1230)
+### Android v1.2.3 - Jan 14th 2015 (build 1230)
 
 - Fix a null pointer exception that could cause a crash on some
   Android 5 Lollipop devices
