@@ -13,6 +13,34 @@ Everyplay SDK/AIR - Release Notes
 
 Adobe AIR and platform specific changes (if any) are separated
 
+## AIR 1960-1320 - Apr 22nd 2015
+
+### v1.9.6 - Apr 16th 2015 (build 1960)
+
+- Improved graphics support against Unity 5.x
+
+- Metal: Fixed thumbnail texture being flipped
+
+- Metal: Fixed to support dynamic screen resolution changes
+
+- Fixed a regression against AVAudioPlayer initWithData: support
+
+- Fixed a compatibility issue with InMobi SDK
+
+### v1.3.2 - Apr 16th 2015 (build 1320)
+
+- Improved graphics support against Unity 5.x
+
+- Multiple stability fixes against ImgTec PowerVR GPU
+
+- Improve OpenGL ES1 support checking
+
+- Prefetching data could cause an exception, fixed
+
+- Fixed a rare login exception on Android 4.0.x
+
+- Minor audio handling improvements
+
 ## AIR 1950-1310 - Apr 10th 2015
 
 ### Android v1.3.1 - Mar 24th 2015 (build 1310)
