@@ -13,6 +13,13 @@ Everyplay SDK/AIR - Release Notes
 
 Adobe AIR and platform specific changes (if any) are separated
 
+## AIR 1961-1332 - May 5th 2015
+
+### iOS v1.9.6 - Apr 28th 2015 (build 1961)
+
+- Metal: Fixed Facecam session handling when reseting
+  session to audio only (1961)
+
 ## AIR 1960-1330 - Apr 29nd 2015
 
 ### Android v1.3.3 - Apr 28th 2015 (build 1330)
