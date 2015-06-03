@@ -13,6 +13,52 @@ Everyplay SDK/AIR - Release Notes
 
 Adobe AIR and platform specific changes (if any) are separated
 
+## AIR 1970-1350 - Jun 3rd 2015
+
+### iOS v1.9.7 - May 26th 2015 (build 1970)
+
+- Metal: Graphics performance and memory usage optimizations
+
+- Metal: Fixed a small memory leak that happened on every frame
+  even while not recording
+
+- Metal: Now supports HUD-less recording feature through
+  [[[Everyplay sharedInstance] capture] snapshotRenderbuffer];
+
+- Removed IDFA related code (AdSupport.framework), now uses IFV
+
+- Removed EveryplaySoundEngine, OpenAL and AVFoundation implementations.
+  Now uses Apple's high performance implementations when available
+
+- Removed legacy OpenGL graphics integration API's from EveryplayCapture
+
+- Removed support for file based thumbnails. If you use thumbnails,
+  switch to texture based implementation
+
+- Removed [Everyplay initWithDelegate:andAddRootViewControllerForView:]
+  It was a helper for older world iOS apps that didn't implement
+  UIViewController. Today, it's safe to assume that your code has them
+
+- Increased the default video bitrate quality a bit
+
+- Fixed a potential audio encoder memory leak while recording
+
+### Android v1.3.5 - June 2nd 2015 (build 1350)
+
+- New feature: Failsafe mode. If there's a crash during early
+  initialization of Everyplay, the recording support will be
+  disabled when the application is launched the next time
+
+  Since the bug might be OS/driver related, the need for Failsafe
+  mode is re-evaluated each time the SDK or OS has been upgraded
+  or the application is removed
+
+- Now supports Android M preview and fixes a crash against it.
+  Older SDKs are disabled from recording against Android M
+
+- More Qualcomm Adreno 420 crash fixes for some devices, like
+  Samsung Galaxy Note 4
+
 ## AIR 1961-1332 - May 5th 2015
 
 ### iOS v1.9.6 - Apr 28th 2015 (build 1961)
