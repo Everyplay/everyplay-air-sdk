@@ -38,7 +38,7 @@ Adobe AIR and platform specific changes (if any) are separated
 
 - Removed file based everyplayThumbnailReadyAt(FilePath|URL): delegates
 
-### v1.4.0 - June 29th 2015 (build 1400)
+### Android v1.4.0 - June 29th 2015 (build 1400)
 
 - Now allows 60fps recordings on Android 4.4+ devices
 
