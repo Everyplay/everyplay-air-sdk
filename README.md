@@ -13,6 +13,51 @@ Everyplay SDK/AIR - Release Notes
 
 Adobe AIR and platform specific changes (if any) are separated
 
+## AIR 1980-1400 - Jun 30th 2015
+
+- Removed setThumbnailWidth method from wrapper API
+
+- Removed onEveryplayThumbnailReadyAtFilePath from wrapper IEveryplayListener
+
+### iOS v1.9.8 - Jun 29th 2015 (build 1980)
+
+- Now allows 60fps recordings on iOS 8+ devices with
+  A7 CPU or later (devices with 64bit capability)
+
+  To change the target framerate from the default 30fps, call
+  [[Everyplay sharedInstance] capture].targetFPS
+
+- Metal: CPU performance and snapshotRenderbuffer improvements
+
+- Live FaceCam: When the internal preview box is hidden and
+  a target texture is in use, the video content is no longer
+  encoded to a separate file and doesn't show separately in
+  the video player
+
+- Removed thumbnailWidth property from EveryplayCapture
+
+- Removed file based everyplayThumbnailReadyAt(FilePath|URL): delegates
+
+### v1.4.0 - June 29th 2015 (build 1400)
+
+- Now allows 60fps recordings on Android 4.4+ devices
+
+  To change the target framerate from the default 30fps,
+  call Everyplay.setTargetFPS()
+
+- Improved frame synchronization and framerate handling
+
+- Fixed an audio issue with FMOD Studio that
+  could have resulted to a silent recording
+
+- Removed setThumbnailWidth method from Everyplay class
+
+- Removed onEveryplayThumbnailReadyAtFilePath from IEveryplayListener
+
+- Fixed an issue with PowerVR GPUs and continuous recording feature:
+  If recording over 5 minutes while using setMaxRecordingMinutesLength,
+  the device could freeze, fixed
+
 ## AIR 1970-1350 - Jun 3rd 2015
 
 ### iOS v1.9.7 - May 26th 2015 (build 1970)
