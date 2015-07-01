@@ -13,6 +13,10 @@ Everyplay SDK/AIR - Release Notes
 
 Adobe AIR and platform specific changes (if any) are separated
 
+## AIR 1980-1400 (p1) - Jul 1st 2015
+
+- Fix onEveryplayUploadDidProgress being sent as onEveryplayUploadDidStart
+
 ## AIR 1980-1400 - Jun 30th 2015
 
 - Removed setThumbnailWidth method from wrapper API
