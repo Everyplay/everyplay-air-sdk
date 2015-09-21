@@ -13,7 +13,7 @@ Everyplay SDK/AIR - Release Notes
 
 Adobe AIR and platform specific changes (if any) are separated
 
-## AIR 1990-1410 (p1) - Sep 21st 2015
+## AIR 1990-1410 - Sep 21st 2015
 
 ### iOS v1.9.9 - Aug 10th 2015 (build 1990)
 
