@@ -13,6 +13,23 @@ Everyplay SDK/AIR - Release Notes
 
 Adobe AIR and platform specific changes (if any) are separated
 
+## AIR 1990-1410 (p1) - Sep 21st 2015
+
+### iOS v1.9.9 - Aug 10th 2015 (build 1990)
+
+- Critical update for iOS 9 App Transport Security (ATS)
+  compatibility
+
+- Fixed iOS 9 SpriteKit inverted graphics issue when
+  running on a device that uses Metal
+
+- Fixed on audio issue with continuous recording when
+  the session lifetime exceeds 5 minutes
+
+### Android v1.4.1 - Aug 10th 2015 (build 1410)
+
+- Minor bugfixes
+
 ## AIR 1980-1400 (p1) - Jul 1st 2015
 
 - Fix onEveryplayUploadDidProgress being sent as onEveryplayUploadDidStart
