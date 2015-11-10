@@ -13,6 +13,35 @@ Everyplay SDK/AIR - Release Notes
 
 Adobe AIR and platform specific changes (if any) are separated
 
+## AIR 2010-1510 - Nov 10th 2015
+
+### iOS v2.0.1 - Oct 9th 2015 (build 2010)
+
+- Fixed audio glitch issue against the new iPhone 6S
+
+  iPhone 6S prevents hardware sample rate to change from the
+  default 48kHz in some situations, causing trouble with
+  certain audio processing libraries. In older releases,
+  this may appear as repeated clicking sound within the
+  recording
+
+- Fix iOS 9 audio compatibility issues with OpenAL
+  and AVFoundation's AVAudioPlayer/AVAudioEngine
+
+  Older releases than 1.9.7 may work, but an upgrade is
+  recommended due to iPhone 6S issues mentioned above
+
+- Workaround AVAudioPlayer related issue with volume
+  fade control
+
+### Android v1.5.1 - Oct 9th 2015 (build 1510)
+
+- Fix Live FaceCam camera session handling when
+  coming back to the application
+
+- Failsafe mode no longer triggers too easily by
+  loading the application and exiting immediately
+
 ## AIR 1990-1410 - Sep 21st 2015
 
 ### iOS v1.9.9 - Aug 10th 2015 (build 1990)
