@@ -13,6 +13,37 @@ Everyplay SDK/AIR - Release Notes
 
 Adobe AIR and platform specific changes (if any) are separated
 
+## AIR 2110-1530 - Feb 15th 2016
+
+### iOS v2.1.1 - Jan 27th 2016 (build 2110)
+
+  Fixed application freezing when returning from background on iOS when using OpenGL ES
+
+  Fixed compilation to work with xCode6
+
+### Android 1.5.3 - Jan 27th 2016 (build 1530)
+
+  Fixed a regression that caused flickering on some devices when using HUD-less recording
+
+
+### iOS v2.1 - Dec 21st 2015 (build 2100)
+
+  Internal refactoring of all graphics related code
+
+  Now defaults to 60fps recording, previously optional
+
+  Improved frame synchronization
+
+  Improved view transition controller logic
+
+  GLES: Added additional graphics state validation to see if recording content can cause problems, like black screen happening while recording. Fixes SpriteKit behaviour on iOS 9 when used with GLES
+
+  Improved audio related handling with pausing/resuming recording in cases where there are no audio sources to record
+
+### Android v1.5.2 - Dec 21st 2015 (build 1520)
+
+  Fixes an audio related crash with FMODAudioDevice
+
 ## AIR 2010-1510 - Nov 10th 2015
 
 ### iOS v2.0.1 - Oct 9th 2015 (build 2010)
